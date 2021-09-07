@@ -1,14 +1,22 @@
 {
-  "name": "projeto-final-veganny",
+  "name": "teste-projetofinal",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dannyelic/teste-projetofinal.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dannyelic/teste-projetofinal/issues"
+  },
+  "homepage": "https://github.com/Dannyelic/teste-projetofinal#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
