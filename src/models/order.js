@@ -17,6 +17,16 @@ const orderSchema = new mongoose.Schema({
     quantity:{
         type: Number,
         require: true
+    },
+    unity: {
+        type:mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: 'menu'
+    },
+    orderedIn:{
+        type: Date,
+        required: true,
+        default: new Date  
     }
 })
 
