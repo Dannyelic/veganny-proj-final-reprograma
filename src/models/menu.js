@@ -5,6 +5,11 @@ const menuSchema = new mongoose.Schema({
     unity: {
         type: String,
         required: true
+    },
+    OrderedIn: {
+        type: Date,
+        required: true,
+        default: new Date
     }
 })
 
