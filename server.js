@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const PORT = process.env.PORT || 8080
-const db = require('./src/data/database')
+const PORT = process.env.PORT || 3333
 
+const db = require('./src/data/database')
 db.connect()
 
 app.use(express.json())
