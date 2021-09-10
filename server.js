@@ -6,9 +6,9 @@ const db = require('./src/data/database')
 
 db.connect()
 
-app.use(cors())
-
 app.use(express.json())
+
+app.use(cors())
 
 const menusRouter = require('./src/routes/menu.routes')
 app.use('/veganny', menusRouter)
