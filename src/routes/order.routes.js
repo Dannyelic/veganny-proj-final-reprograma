@@ -4,9 +4,11 @@ const controller =  require('../controllers/orderController')
 
 router.get('/', controller.getAll)
 
-router.get('/paulista', controller.getAllPaulista)
+router.get('/recife', controller.getAllRecife)
 
-//router.patch('/:id', controller.updateOrder)
+router.get('/olinda', controller.getAllOlinda)
+
+router.get('/paulista', controller.getAllPaulista)
 
 router.post('/', controller.createOrder)
 
