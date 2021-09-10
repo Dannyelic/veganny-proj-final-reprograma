@@ -14,4 +14,4 @@ app.use('/menu', ordersRouter)
 const cartRouter = require('./src/routes/cart.routes')
 app.use('/cart', cartRouter)
 
-app.listen(3333, () => console.log('Servidor rodando na porta 3333 ✔'))
+app.listen(8080, () => console.log('Servidor rodando na porta 8080 ✔'))
