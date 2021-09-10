@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express()
-
+const PORT = process.env.PORT || 8080
 const db = require('./src/data/database')
+
 db.connect()
+
 app.use(express.json())
 
 const menusRouter = require('./src/routes/menu.routes')
@@ -14,4 +16,6 @@ app.use('/menu', ordersRouter)
 const cartRouter = require('./src/routes/cart.routes')
 app.use('/cart', cartRouter)
 
-app.listen(8080, () => console.log('Servidor rodando na porta 8080 ✔'))
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT}`)
+})
