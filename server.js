@@ -10,6 +10,9 @@ app.use(express.json())
 
 app.use(cors())
 
+const index = require('./src/routes/index')
+app.use('/', index)
+
 const menusRouter = require('./src/routes/menu.routes')
 app.use('/veganny', menusRouter)
 
